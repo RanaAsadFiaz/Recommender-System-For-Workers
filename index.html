@@ -1,0 +1,15 @@
+<html>
+
+	
+	{% for i in returned.name %}
+		<h1> {{ i }} </h1>
+		
+	{% endfor %}
+	
+	<a href=" {{ url_for('secondpage') }} " >link</a>
+	
+	<form method="POST" action=" {{url_for('secondpage')}} ">
+		<input type = "text" name = 'uname'>
+	</form>
+	
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+
+	<style type="text/css">
+	table, th, td {
+    border: 1px solid black;
+    border-color: black;
+}
+	</style>
+</head>
+<body>
+
+	{% for l in returned.data %}
+		<tr> <td><th></br>User Id: <h3>{{ l[0] }}</h3></th></td> 
+
+		{% for m in l[1] %}
+			<td> {{ m }}</td> 
+		{% endfor %}
+		</tr>
+	{% endfor %}
+</body>
+</html>

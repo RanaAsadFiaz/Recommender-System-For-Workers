@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    
+    .logo p {
+      font-size: 50px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+
+      <div class="row text-center logo">
+        <p>Recommender System for Workers</p>
+      </div> <!-- row -->
+
+      <div class="row">
+        
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div> <!-- row -->
+      <br>
+
+    <div class="row">
+     <!--  <h2>{{ returned.data[0] }}</h2>
+      <p></p>             -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Worker' s ID</th>
+            <th>Worker's NAME</th>
+            <th>RATINGS</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for l in returned.data[1] %}
+          <tr>
+            <td>{{ l[0] }}</td>
+            <td>{{ l[2] }}</td>
+            <td>{{ l[1] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div> <!-- row -->
+
+  </div> <!-- container -->
+
+</body>
+</html>

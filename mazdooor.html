@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>Recommender System For Workers</title>
+<style> 
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('abc.png');
+    background-position: 10px 10px;
+    background-size: 35px 35px; 
+    background-repeat: no-repeat;
+    padding: 20px 20px 12px 50px;
+    height:10%
+}
+div .social-btn {
+  width:1000px;
+  margin: auto;
+  
+  text-align: center;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 12px;
+    width:15%;
+    height:10%
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width:%;
+  border: 1px solid #555;
+  margin: 4px 2px;
+
+
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  width:10%;
+  height:7%;
+  background-width:50%;
+  border-radius:15%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.prf{
+	height : 10%;
+	width:30%;
+}
+.topnav > li {                                                             
+    display:Inline-block;                                 
+}
+
+.foo {
+  float: left;
+  width: 15%;
+  height: 35%;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 70px; 
+}
+.foo >img{
+	float:center;
+}
+
+.blue {
+  background-color: #13b4ff;
+}
+
+.purple {
+  background-color: #ab3fdd;
+}
+
+.wine {
+  background-color: #ae163e;
+}
+
+.green
+{
+ background-color: #00ff00;
+}
+.seagreen
+{
+	background-color: #222222;
+}
+.aqua
+{
+	background-color: #00ffff;
+}
+.red
+{
+	background-color: #ff0000
+}
+.yellow
+{
+	background-color:#ffff00
+}
+.brown
+{
+	background-color: ff5b33
+}
+.salmon
+{
+	background-color: #fa8072;
+}
+</style>
+</head>
+<body>
+
+<center>
+<div class="topnav" id="myTopnav">
+<div class = "hand">
+</a></div>
+  <li>
+  <a href="#Signup"><strong>Register</strong></a>
+  <a href="#login"><strong>Login</strong></a>
+  <a href="#about"><strong>About</strong></a>
+  <a href="#contact"><strong>Contact</strong></a>
+  <a href="#home" class="active"><strong>Home</strong></a>
+  </a>
+  </li>
+</div></center>
+</br>
+<center>
+<form action="/action_page.php" target="_blank">
+<fieldset>
+	  <legend>Search For The Best Worker In Your Location</legend>
+      <p><input class="subject" type="hidden" value="Class" />
+    <select name="Profession" id="Profession" class  = "prf" >
+      <option value="Carpenter" selected="selected">Carpenter</option>
+      <option value="Cook" selected="selected">Cook</option>
+      <option value="CraftsMan" selected="selected">CraftsMan</option>
+      <option value="Driver" selected="selected">Driver</option>
+      <option value="Electrician" selected="selected">Electrician</option>
+      <option value="Labourer" selected="selected">Labourer</option>
+      <option value="Painter" selected="selected">Painter</option>
+      <option value="Plumber" selected="selected">Plumber</option>
+      <option value="Technician" selected="selected">Technician</option>
+      <option value="Tutor" selected="selected">Tutor</option>
+    </select>
+<input class="subject" type="hidden" value="Class" />
+    <select name="Location" id="Location" class  = "prf" >
+      <option value="California" selected="selected">California</option>
+      <option value="Florida" selected="selected">Florida</option>
+      <option value="Miami" selected="selected">Miami</option>
+      <option value="New York" selected="selected">New York</option>
+      <option value="Ohio" selected="selected">Ohio</option>
+    </select>
+      <button class="button" type="submit">SEARCH</button>
+      </p>
+</fieldset>      
+    </form>
+</center>
+<center>
+
+<center><strong><legend>Select Worker From The Field</legend></strong></center>
+</br></br>
+<center><div class="foo blue"><p>
+<a href = "#carpenter"><strong></strong><img src="carpenter.png" style = "width:80%;height:75%"></a></p></div></center>
+<center><div class="foo purple"><p>
+<a href = "#cook"><strong></strong><img src="cook.png" style = "width:80%;height:75%"></a></p></div></center>
+<center><div class="foo wine"><p>
+<a href = "#craftsman"><strong></strong><img src="craftsman.png" style = "wwidth:80%;height:75%"></a></p></div></center>
+<center><div class="foo green"><p>
+<a href = "#driver"><strong></strong><img src="driver.png" style = "width:80%;height:75%"></a></p></div></center>
+<center><div class="foo seagreen"><p>
+<a href = "#Electrician"><strong></strong><img src="electrcian.png" style = "width:80%;height:75%"></a></p></div></center>
+<center><div class="foo aqua"><p>
+<a href = "#Labourer"><strong></strong><img src="labourer.png" style = "width:80%;height:75%"></a></p></div></center>
+<center><div class="foo red"><p>
+<a href = "#painter"><strong></strong><img src="painter.png" style = "width:80%;height:75%"></a></p></div></center>
+<center><div class="foo yellow"><p>
+<a href = "#plumber"><strong></strong><img src="plumber.png" style = "width:80%;height:75%"></a></p></div></center>
+<center><div class="foo brown"><p>
+<a href = "#technician"><strong></strong><img src="technician.png" style = "width:80%;height:75%"></a></p></div></center>
+<center><div class="foo salmon">
+<p>
+<a href = "#tutor"><strong></strong><img src="tutor.png" style = "%width:80%;height:75%"></a></p></div>
+</center>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<center>
+<footer><span>&copy; Copy Rights reserved for Recommender System For Workers Project 2018</span>
+<span>&reg; Registered 2018-25</span></footer></center>
+</body>
+</html>
